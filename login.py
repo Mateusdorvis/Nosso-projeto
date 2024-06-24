@@ -1,1 +1,1 @@
-Teste 12345
+print("teste")
