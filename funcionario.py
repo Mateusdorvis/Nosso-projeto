@@ -6,6 +6,8 @@ class Funcionario:
     def __repr__(self):
         return f'{self.nome}, {self.senha}'
     
+
+    
     
 
     
