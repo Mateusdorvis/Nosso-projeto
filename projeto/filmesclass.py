@@ -36,6 +36,16 @@ class Filme:
             print("você não pode assistir")
         else: 
             print("invalido")
+
+#sessao de cinema para + 10
+    def verifica_idade_sessao_10(self, idade):
+        if idade>=10:
+            print("Você pode assistir")
+        elif idade<10:
+            print("você não pode assistir")
+        else: 
+            print("invalido")
+
 #sessao de cinema para + 12
     def verifica_idade_sessao_12(self, idade):
         if idade>=12:

@@ -11,10 +11,10 @@ def  iniciar():
 				case 1:
 					filme1 = dicionario_filmes.get("filme 1")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, "L")
+					filme = Filme(filme1, 128, 10)
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
+					filme.verifica_idade_sessao_10(anos)
 					
 
 				case 2:
@@ -50,18 +50,18 @@ def  iniciar():
 				case 6:
 					filme1 = dicionario_filmes.get("filme 6")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
+					filme = Filme(filme1, 128, 14)
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
+					filme.verifica_idade_sessao_14(anos)
 
 				case 7:
 					filme1 = dicionario_filmes.get("filme 7")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
+					filme = Filme(filme1, 128, 16)
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
+					filme.verifica_idade_sessao_16(anos)
 				case _:
 					print("invalido")
 		filmes()
