@@ -16,12 +16,13 @@ def  iniciar():
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_10(anos)
 					
-
 				case 2:
 					filme1 = dicionario_filmes.get("filme 2")
 					print(f"você quer assistir {filme1}")
 					filme = Filme(filme1, 128, 12)
 					filme.informacao_sobre_filme()
+					anos = int(input("Tem quantos anos :"))
+					filme.verifica_idade_sessao_12(anos)
 
 				case 3:
 					filme1 = dicionario_filmes.get("filme 3")
