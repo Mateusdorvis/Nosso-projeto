@@ -1,7 +1,7 @@
 import login
 from assento import Assento
 
-"""class entrada_funcionario:
+class entrada_funcionario:
    print("Insira seus dados de login para continuar")
 nome = input("Digite seu nome completo: ")
 senha = int(input("Digite sua senha PIN: "))
@@ -10,7 +10,8 @@ if not login.dados_funcionarios(nome,senha):
    print("Nome de usuário ou senha incorretos.")
     
 else:
-   print("Acesso liberado!")"""
+   print("Acesso liberado!")
+
 def reserva_assento():
     fileiraA = [Assento('A1'),Assento("A2"),Assento('A3'),Assento('A4'),Assento('A5'),Assento('A6'),Assento('A7'),Assento('A8')]
     for assento in fileiraA:
@@ -22,8 +23,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[0].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -32,8 +35,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[1].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -42,8 +47,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[2].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -52,8 +59,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[3].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -62,8 +71,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[4].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -72,8 +83,10 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[5].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -82,8 +95,11 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
+                
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[6].reserva(nome)
             print("Lugar Reservado com sucesso!")
 
@@ -92,10 +108,15 @@ def reserva_assento():
                 print("Este lugar está reservado.\n")
                 reserva_assento()
                 return
+            else:
+                print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite seu nome: ")
+            nome = input("Digite o nome do cliente: ")
             fileiraA[7].reserva(nome)
             print("Lugar Reservado com sucesso!")
+
+
+   
         
         
             

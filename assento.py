@@ -11,6 +11,7 @@ class Assento:
         self.nome_reservado = ""
         self.reservado = False
 
+
     
         
 
