@@ -11,8 +11,11 @@ class Assento:
         self.nome_reservado = ""
         self.reservado = False
 
-    def reservado(self):
-        self.reservado = True
+    
+        
+
+    
+        
 
 
 

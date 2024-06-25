@@ -12,7 +12,7 @@ if not login.dados_funcionarios(nome,senha):
 else:
    print("Acesso liberado!")"""
 def reserva_assento():
-    fileiraA = [Assento('A1'),Assento("A2"),Assento('A3'),Assento('A4'),Assento('A5'),Assento('A6')]
+    fileiraA = [Assento('A1'),Assento("A2"),Assento('A3'),Assento('A4'),Assento('A5'),Assento('A6'),Assento('A7'),Assento('A8')]
     for assento in fileiraA:
         print(f'Assento: {assento.nome} status reservado: {assento.reservado} nome da reserva: {assento.nome_reservado}')
     escolha = input("escolha um assento disponível").upper
@@ -76,6 +76,32 @@ def reserva_assento():
             nome = input("Digite seu nome: ")
             fileiraA[5].reserva(nome)
             print("Lugar Reservado com sucesso!")
+
+        case 'A7':
+            if assento[6].reservado:
+                print("Este lugar está reservado.\n")
+                reserva_assento()
+                return
+                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+            nome = input("Digite seu nome: ")
+            fileiraA[6].reserva(nome)
+            print("Lugar Reservado com sucesso!")
+
+        case 'A8':
+            if assento[7].reservado:
+                print("Este lugar está reservado.\n")
+                reserva_assento()
+                return
+                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+            nome = input("Digite seu nome: ")
+            fileiraA[7].reserva(nome)
+            print("Lugar Reservado com sucesso!")
+        
+        
+            
+        
+
+               
 
         
 
