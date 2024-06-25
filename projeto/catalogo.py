@@ -5,13 +5,13 @@ def  iniciar():
 	pergunta = int(input("deseja ver catalogo de filmes? 1. Sim , 2.Não :"))
 	if pergunta==1:
 		def filmes():
-			dicionario_filmes = {"filme 1": "Duna 2", "filme 2": "Divertida Mente 2", "filme 3" : "Os Fantasmas se divertem 2", "filme 4" : "O coringa 2"}
+			dicionario_filmes = {"filme 1": "Divertida Mente 2", "filme 2": "Os Fantasmas se Divertem 2", "filme 3" : "Guerra Civil", "filme 4": "Duna 2", "filme 5": "A Primeira Profecia", "filme 6": "Bad Boys 4", "filme 7" : 'Um Lugar Silencioso - Dia Um'}
 			pergunta2 = int(input(f'Este é o catalogo de filmes disponivel : {dicionario_filmes}, vai escolher querer qual? '))
 			match pergunta2:
 				case 1:
 					filme1 = dicionario_filmes.get("filme 1")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
+					filme = Filme(filme1, 128, "L")
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
