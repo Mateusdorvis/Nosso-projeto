@@ -1,14 +1,12 @@
-from funcionario import Funcionario
+import login
 
-def ler_dados():
-    funcionario = []
-    with open ('funcionario.txt', 'r') as file:
-     
-#incompleto
+class entrada_funcionario:
+   print("Insira seus dados de login para continuar")
+nome = input("Digite seu nome completo: ")
+senha = int(input("Digite sua senha PIN: "))
 
-
-
-login_nome = input("Digite o seu nome completo: ")
-login_senha = int(input("Insira sua senha PIN: "))
-
-
+if not login.dados_funcionarios(nome,senha):
+   print("Nome de usuário ou senha incorretos.")
+    
+else:
+   print("Acesso liberado!")
