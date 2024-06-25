@@ -1,15 +1,17 @@
 import login
 
-class entrada_funcionario:
-   print("Insira seus dados de login para continuar")
-nome = input("Digite seu nome completo: ")
-senha = int(input("Digite sua senha PIN: "))
+def entrada_funcionario():
+    print("Insira seus dados de login para continuar")
 
-if not login.dados_funcionarios(nome,senha):
-   print("Nome de usuário ou senha incorretos.")
-    
-else:
-   print("Acesso liberado!")
+    nome = str(input("Digite seu nome completo: "))
+    senha = int(input("Digite sua senha PIN: "))
 
-    
+    if login.dados_funcionarios(nome.upper(), senha):
+        ax =""#joga pra algum lugar
+    else:
+        entrada_funcionario()    
+        
+entrada_funcionario()
+  
+
 
