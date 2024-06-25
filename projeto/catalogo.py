@@ -20,20 +20,45 @@ def  iniciar():
 				case 2:
 					filme1 = dicionario_filmes.get("filme 2")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, "L")
+					filme = Filme(filme1, 128, 12)
 					filme.informacao_sobre_filme()
 
 				case 3:
 					filme1 = dicionario_filmes.get("filme 3")
 					print(f"você quer assistir {filme1}")
+					filme = Filme(filme1, 128, 18)
+					filme.informacao_sobre_filme()
+					anos = int(input("Tem quantos anos :"))
+					filme.verifica_idade_sessao_18(anos)
+
+				case 4:
+					filme1 = dicionario_filmes.get("filme 4")
+					print(f"você quer assistir {filme1}")
 					filme = Filme(filme1, 128, 12)
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
-				case 4:
-					filme1 = dicionario_filmes.get("filme 4")
+
+				case 5:
+					filme1 = dicionario_filmes.get("filme 5")
 					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 16)
+					filme = Filme(filme1, 128, 12)
+					filme.informacao_sobre_filme()
+					anos = int(input("Tem quantos anos :"))
+					filme.verifica_idade_sessao_12(anos)
+
+				case 6:
+					filme1 = dicionario_filmes.get("filme 6")
+					print(f"você quer assistir {filme1}")
+					filme = Filme(filme1, 128, 12)
+					filme.informacao_sobre_filme()
+					anos = int(input("Tem quantos anos :"))
+					filme.verifica_idade_sessao_12(anos)
+
+				case 7:
+					filme1 = dicionario_filmes.get("filme 7")
+					print(f"você quer assistir {filme1}")
+					filme = Filme(filme1, 128, 12)
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
