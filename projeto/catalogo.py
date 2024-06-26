@@ -15,6 +15,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_10(anos)
+					filme.add_favoritos()
 					
 				case 2:
 					filme1 = dicionario_filmes.get("filme 2")
@@ -23,6 +24,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
+					filme.add_favoritos()
 
 				case 3:
 					filme1 = dicionario_filmes.get("filme 3")
@@ -31,6 +33,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_18(anos)
+					filme.add_favoritos()
 
 				case 4:
 					filme1 = dicionario_filmes.get("filme 4")
@@ -39,6 +42,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
+					filme.add_favoritos()
 
 				case 5:
 					filme1 = dicionario_filmes.get("filme 5")
@@ -47,6 +51,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
+					filme.add_favoritos()
 
 				case 6:
 					filme1 = dicionario_filmes.get("filme 6")
@@ -55,6 +60,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_14(anos)
+					filme.add_favoritos()
 
 				case 7:
 					filme1 = dicionario_filmes.get("filme 7")
@@ -63,6 +69,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_16(anos)
+					filme.add_favoritos()
 				case _:
 					print("invalido")
 		filmes()

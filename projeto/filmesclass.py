@@ -8,8 +8,8 @@ class Filme:
         print(f"Titulo do filme : {self.titulo}, Duração : {self.duracao}, Classificacao : +{self.classificacao}")
 
     def add_favoritos(self, lista):
-        questao = int(input(" Deseja a sua lista de favoritos ? 1. Sim 2. Não :"))
-        listafav = []
+        questao = int(input(" Deseja o filme para sua lista de favoritos ? 1. Sim 2. Não :"))
+        listafav = ["Sua lista de filmes favoritos :"]
         listafav.append(lista)
         print(listafav)
   #sessao de cinema para + 18
