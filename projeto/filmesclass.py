@@ -12,11 +12,11 @@ class Filme:
         questao = int(input(" Deseja o filme para sua lista de favoritos ? 1. Sim 2. Não :"))
         if questao==1:
             listafav.append(lista)
+            print(listafav)
         elif questao==2:
             print("ok")
         else:
             return "digite um número"
-        print(listafav)
   #sessao de cinema para + 18
     def verifica_idade_sessao_18(self, idade):
         if idade>=18:
