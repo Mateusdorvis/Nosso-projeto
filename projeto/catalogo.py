@@ -1,4 +1,5 @@
 from filmesclass import Filme
+import escolhas
 
 filme = Filme("none", 128, 12) #filme é obj
 def  iniciar():
@@ -15,8 +16,8 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_10(anos)
-					filme.add_favoritos()
-					
+					filme.add_favoritos(filme1)
+
 				case 2:
 					filme1 = dicionario_filmes.get("filme 2")
 					print(f"você quer assistir {filme1}")
@@ -24,7 +25,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_12(anos)
-					filme.add_favoritos()
+					filme.add_favoritos(filme1)
 
 				case 3:
 					filme1 = dicionario_filmes.get("filme 3")
@@ -33,7 +34,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_18(anos)
-					filme.add_favoritos()
+					filme.add_favoritos(filme1)
 
 				case 4:
 					filme1 = dicionario_filmes.get("filme 4")
@@ -60,7 +61,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_14(anos)
-					filme.add_favoritos()
+					filme.add_favoritos(filme1)
 
 				case 7:
 					filme1 = dicionario_filmes.get("filme 7")
@@ -69,7 +70,7 @@ def  iniciar():
 					filme.informacao_sobre_filme()
 					anos = int(input("Tem quantos anos :"))
 					filme.verifica_idade_sessao_16(anos)
-					filme.add_favoritos()
+					filme.add_favoritos(filme1)
 				case _:
 					print("invalido")
 		filmes()

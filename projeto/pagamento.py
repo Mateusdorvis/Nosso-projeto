@@ -1,5 +1,4 @@
 class Pagamentocinema:
-    
     def __init__(self, pagamento, valor, n_assento, filme, dia, hora):
         self.pagamento = pagamento
         self.valor = valor
@@ -10,8 +9,7 @@ class Pagamentocinema:
         
     
     def gerar_informacao(self):
-        codigo_padrao = 12345678901
-        print(f"Tipo de pagamento : {self.pagamento},  código do pagamento : {codigo_padrao}, Valor pago : {self.valor}, filme escolhido : {self.filme}, assento escolhido : {self.n_assento},\  dia escolhido : {self.dia}, hora escolhida : {self.hora}")
+        print(f"Tipo de pagamento : {self.pagamento},  código do pagamento : 12345678901 , Valor pago : {self.valor}, filme escolhido : {self.filme}, assento escolhido : {self.n_assento},\  dia escolhido : {self.dia}, hora escolhida : {self.hora}")
 
 
 
