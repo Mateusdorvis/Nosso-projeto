@@ -8,7 +8,7 @@ def escolhas():
 			tira = escolhasala.get("Escolha de sala 1")
 			print(f"vc escolheu {tira} ")
 	elif pergunta3==2:
-			tira = escolhasala.get("FEscolha de sala 2")
+			tira = escolhasala.get("Escolha de sala 2")
 			print(f"vc escolheu  {tira}")
 	elif pergunta3==3:
 			tira = escolhasala.get("Escolha de sala 3")
