@@ -1,4 +1,6 @@
+from pagamento import Pagamentocinema
 
+obj = Pagamentocinema("debito", 12, "a2","filme ", 12345, 2024) #ex
 def escolhas():
 	escolhasala = {"Escolha de sala 1": "Sala VIP", "Escolha de sala  2": "Sala convencional", "Escolha de sala 3" : "Sala 3D,", "Escolha de sala  4": "drive-in","Escolha de sala  5": "Sala IMAX" }
 	
@@ -7,6 +9,7 @@ def escolhas():
 	if pergunta3==1:
 			tira = escolhasala.get("Escolha de sala 1")
 			print(f"vc escolheu {tira} ")
+			obj.
 			  
 	elif pergunta3==2:
 			tira = escolhasala.get("Escolha de sala 2")

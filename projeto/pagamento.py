@@ -9,7 +9,7 @@ class Pagamentocinema:
         self.hora = hora
         
     
-    def gerar_contaprapagar(self):
+    def gerar_informacao(self):
         codigo_padrao = 12345678901
         print(f"Tipo de pagamento : {self.pagamento},  código do pagamento : {codigo_padrao}, Valor pago : {self.valor}, filme escolhido : {self.filme}, assento escolhido : {self.n_assento},\  dia escolhido : {self.dia}, hora escolhida : {self.hora}")
 
