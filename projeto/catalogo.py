@@ -3,7 +3,6 @@ import escolhas
 
 filme = Filme("none", 128, 12) #filme é obj
 def  iniciar():
-	pergunta = int(input("deseja ver catalogo de filmes? 1. Sim , 2.Não :"))
 	if pergunta==1:
 		def filmes():
 			dicionario_filmes = {"filme 1": "Divertida Mente 2", "filme 2": "Os Fantasmas se Divertem 2", "filme 3" : "Guerra Civil", "filme 4": "Duna 2", "filme 5": "A Primeira Profecia", "filme 6": "Bad Boys 4", "filme 7" : 'Um Lugar Silencioso - Dia Um'}
