@@ -8,8 +8,8 @@ class Filme:
         print(f"Titulo do filme : {self.titulo}, Duração : {self.duracao}, Classificacao : +{self.classificacao}")
 
     def add_favoritos(self, lista):
-        listafav = ["Sua lista de filmes favoritos :"]
-        questao = int(input(" Deseja o filme para sua lista de favoritos ? 1. Sim 2. Não :"))
+        listafav = ["A  lista de filmes favoritos  do cliente:"]
+        questao = int(input(" Deseja o cliente filme para sua lista de favoritos ? 1. Sim 2. Não :"))
         if questao==1:
             listafav.append(lista)
             print(listafav)
@@ -20,25 +20,25 @@ class Filme:
   #sessao de cinema para + 18
     def verifica_idade_sessao_18(self, idade):
         if idade>=18:
-            print("Você pode assistir")
+            print("Cliente pode assistir")
         elif idade<18:
-            print("você não pode assistir")
+            print("Cliente não pode assistir")
         else: 
             print("invalido")
 #sessao de cinema para + 16
     def verifica_idade_sessao_16(self, idade):
         if idade>=16:
-            print("Você pode assistir")
+            print("Cliente pode assistir")
         elif idade<16:
-            print("você não pode assistir")
+            print("Cliente não pode assistir")
         else: 
             print("invalido")
 #sessao de cinema para + 14
     def verifica_idade_sessao_14(self, idade):
         if idade>=14:
-            print("Você pode assistir")
+            print("Cliente pode assistir")
         elif idade<14:
-            print("você não pode assistir")
+            print("Cliente não pode assistir")
         else: 
             print("invalido")
 
@@ -54,9 +54,9 @@ class Filme:
 #sessao de cinema para + 12
     def verifica_idade_sessao_12(self, idade):
         if idade>=12:
-            print("Você pode assistir")
+            print("Cliente pode assistir")
         elif idade<12:
-            print("você não pode assistir")
+            print("Cliente não pode assistir")
         else: 
             print("invalido")
     #sessao de cinema livre
