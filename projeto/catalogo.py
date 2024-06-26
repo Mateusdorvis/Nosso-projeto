@@ -71,12 +71,6 @@ def  iniciar():
 					filme.add_favoritos(filme1)
 				case _:
 					print("invalido")
-		filmes()
 
-	elif pergunta==2:
-		print("ok obrigado")
-	else:
-		print("digite um número")
-		return iniciar()
 iniciar()
 
