@@ -16,13 +16,13 @@ def reserva_assento():
     fileiraA = [Assento('A1'),Assento("A2"),Assento('A3'),Assento('A4'),Assento('A5'),Assento('A6'),Assento('A7'),Assento('A8')]
     for assento in fileiraA:
         print(f'Assento: {assento.nome} status reservado: {assento.reservado} nome da reserva: {assento.nome_reservado}')
-    escolha = input("escolha um assento disponível").upper
+    escolha = input("escolha um assento disponível: ").upper
     match escolha:
         case 'A1':
             if assento[0].reservado:
                 print("Este lugar está reservado.\n")
                 reserva_assento()
-                return
+                return 
             else:
                 print('Este lugar está disponível.')
                 #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
