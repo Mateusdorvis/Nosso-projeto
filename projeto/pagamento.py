@@ -28,6 +28,8 @@ class Pagamentocinema:
         elif paga==4:
             tira2 = escolhapagamento.get("Forma de pagamento 4")
             print(f"você escolheu como forma de pagamento via {tira2}")
+    tipopagamento()
+
 
 
 

@@ -7,6 +7,7 @@ def escolhas():
 	if pergunta3==1:
 			tira = escolhasala.get("Escolha de sala 1")
 			print(f"vc escolheu {tira} ")
+			  
 	elif pergunta3==2:
 			tira = escolhasala.get("Escolha de sala 2")
 			print(f"vc escolheu  {tira}")
