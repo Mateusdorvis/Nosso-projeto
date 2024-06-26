@@ -1,13 +1,11 @@
 from pagamento import Pagamentocinema
 
-
-
 def data_hora():
-    hora = int(input("digite a hora que seja entre 8h e 22h:"))
+    hora = int(input("digite um horário entre 8h e 22h:"))
     if hora>=22:
-        print("digite uma hora que seja menor que 22h")
+        print("digite um horário menor que 22h")
     elif hora<=8:
-          print("digite uma hora que seja maior que 8h")
+          print("digite um horário maior que 8h")
     else:
         print("ok")
         

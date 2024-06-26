@@ -1,6 +1,6 @@
-
-def escolhas():
-	pergunta3 =int(input("A seguir escolha qual tipo de sala que queira : 1. Sala VIP, 2. Sala convencional, 3. Sala IMAX, 4.Sala 3D, 5. drive-in :"))
+def escolha_sala():
+	print("O filme está dispinível nas seguintes modalidades: \n1. Sala VIP \n2. Sala convencional \n3. Sala IMAX \n4. Sala 3D \n5. Drive-in")
+	pergunta3 =int(input("escolha em qual você deseja assistir: "))
 	match pergunta3:
 		case 1:
 			print("vc escolheu sala vip")
@@ -14,5 +14,5 @@ def escolhas():
 			print("vc escolheu para drive-in")
 		case _:
 			print("inválido")
-			return escolhas()
-escolhas()
+			return escolha_sala()
+escolha_sala()
