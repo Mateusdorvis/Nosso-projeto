@@ -7,7 +7,7 @@ class Funcionario:
     
 pessoa1 = Funcionario("Fernanda Farias", 123)
 pessoa2 = Funcionario("Sarah Hassen", 456)
-pessoa3 = Funcionario("Alysson Narciso", 789)
+pessoa3 = Funcionario("Alysson Narcizo", 789)
 
 lista_funcionarios = [pessoa1, pessoa2, pessoa3]
 

@@ -5,7 +5,7 @@ class Filme:
         self.classificacao = classificacao
     
     def informacao_sobre_filme(self):
-        print(f"Titulo do filme : {self.titulo}, Duração : {self.duracao}, Classificacao : +{self.classificacao}")
+        print(f"Titulo do filme : {self.titulo}, Duração : {self.duracao} min, Classificacao : +{self.classificacao}")
 
     def add_favoritos(self, lista):
         listafav = ["A  lista de filmes favoritos  do cliente:"]

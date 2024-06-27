@@ -1,169 +1,41 @@
 import login
-from assento import Assento
+import catalogo
+import main_do_assento
 
-fileiraA = [Assento('A1'),Assento("A2"),Assento('A3'),Assento('A4'),Assento('A5'),Assento('A6'),Assento('A7'),Assento('A8')]
-def reserva_assento():
-    for assento in fileiraA:
-        print(f'Assento: {assento.nome} status reservado: {assento.reservado} nome da reserva: {assento.nome_reservado}')
-    escolha = input("escolha um assento disponível: ").upper()
-    match escolha:
-        case 'A1':
-            if fileiraA[0].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return 
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[0].reserva(nome)
-            
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
+dicionario_filmes = {"filme 1": "Divertida Mente 2", "filme 2": "Os Fantasmas se Divertem 2", "filme 3" : "Guerra Civil", "filme 4": "Duna 2", "filme 5": "A Primeira Profecia", "filme 6": "Bad Boys 4", "filme 7" : 'Um Lugar Silencioso - Dia Um'}
 
-        case 'A2':
-            if fileiraA[1].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[1].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
+def entrada_funcionario():
+    print("Olá!\nInsira seus dados de login para acessar o menu.")
 
-        case 'A3':
-            if fileiraA[2].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return 
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[2].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
+    nome = str(input("Digite seu nome completo: "))
+    senha = int(input("Digite sua senha PIN: "))
 
-        case 'A4':
-            if fileiraA[3].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[3].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
-
-        case  'A5':
-            if fileiraA[4].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[4].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
-
-        case 'A6':
-            if fileiraA[5].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[5].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
-
-        case 'A7':
-            if fileiraA[6].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[6].reserva(nome)
-            print("Lugar Reservado com sucesso!")
-            continuar = int(input("deseja continuar? [1]. sim [2]. não: "))
-            if continuar == 1:
-                return reserva_assento()
-            else:
-                print("Escolha dos assentos finalizada.")
-
-        case 'A8':
-            if fileiraA[7].reservado:
-                print("Este lugar está reservado.\n")
-                reserva_assento()
-                return
-            else:
-                print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
-            nome = input("Digite o nome do cliente: ")
-            fileiraA[7].reserva(nome)
-            print("Lugar Reservado com sucesso!")
+    if login.dados_funcionarios(nome.upper(), senha):
+        ax =""#joga pra algum lugar
+    else:
+        entrada_funcionario()  
         
+def mostrar_menu():
+        print("-"*30)
+        print("Bem vindo(a) ao nosso sistema")
+        print("-"*30)
+        print()
+        print("O que você deseja fazer agora?")
+        print("[1] Ver filmes em cartaz")
+        print("[2] Escolher sessão (filme e horário)")
+        print("[3] Escolher sala e assento")
+        print("[4] Gerar ingresso")
+        print()
+def main():
+     while True:
+          mostrar_menu()
+          escolha = int(input("Selecione a opção desejada: "))
+          
+          if escolha == "1":
+            print (f"Este é o catalogo de filmes disponiíveis: {dicionario_filmes}")
+          elif escolha == "2":
+            catalogo.iniciar
 
-
-            
-print("Insira seus dados de login para continuar")
-nome = input("Digite seu nome completo: ")
-senha = int(input("Digite sua senha PIN: "))
-
-if not login.dados_funcionarios(nome,senha):
-   print("Nome de usuário ou senha incorretos.")
-    
-else:
-   print("Acesso liberado!")
-   reserva_assento()
-
-
-
-   
-        
-        
-            
-        
-
-               
-
-        
-
-
+entrada_funcionario()
+mostrar_menu()
+main()
