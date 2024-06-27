@@ -3,17 +3,25 @@ import random
 def gerar_ingresso(filme):
     #hora
     hora_escolhida = int(input("Digite o horário desejado (entre 8h a 22h): "))
-    if hora_escolhida <8 or hora_escolhida >22:
+    if hora_escolhida >=8 and hora_escolhida <=22:
+        print("ok")
+    
+    elif hora_escolhida<8 or hora_escolhida>22:
         print("Digite uma hora entre 8h e 22h.")
         return gerar_ingresso(filme)
-        
+       
     else:
         print("invalido")
     #minutos
     minutos = int(input("Digite os minutos desejados (0 a 59): "))
-    if minutos < 0 or minutos > 59:
-        print("Digite minutos entre 0 e 59.")
+    if minutos <=59 or minutos >=0:
+        print("ok")
+    
+    elif hora_escolhida<8 or hora_escolhida>22:
+        print("Digite uma hora entre 8h e 22h.")
         return gerar_ingresso(filme)
+    else:
+       print("invalido")
 
     horario = "{}h:{}m".format(hora_escolhida, minutos)
    
