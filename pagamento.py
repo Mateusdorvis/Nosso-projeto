@@ -42,7 +42,7 @@ def gerar_ingresso(filme):
     ano_desejado = int(input("Digite o ano :"))
 
     dta_completa = "{} / {} / {}".format(dia, numero_mes, ano_desejado)
-   
+    #sessao mais valor
     filme_pago = 50
     vip = 100
     convencional = 30
