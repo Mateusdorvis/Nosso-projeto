@@ -28,9 +28,9 @@ def gerar_ingresso(filme):
      #dia
     dia = int(input("Digite o dia ENTRE 1 A 31: "))
     numero_mes = int(input("Digite o numero de mes (EX) 1. JAN ,  2. FEV,  3.MAR,  4.ABR,  5.MAI,  6.JUN,  7. JUL,  8.AGO,  9.SET,  10.OUT ,  11.NOV ,  12.DEZ :"))
-    ano_desejado = numero_mes = int(input("Digite o ano :"))
+    ano_desejado = int(input("Digite o ano :"))
 
-    horario = "{}h:{}m".format(hora_escolhida, minutos)
+    dta_completa = "{} / {} / {}".format(dia, numero_mes, ano_desejado)
    
     filme_pago = 50
     vip = 100
@@ -75,13 +75,10 @@ def gerar_ingresso(filme):
     
     else:
        print("invalido")
-    
+    #forma de como o cliente vai pagar
     tipos_de_pagamento = {"Forma de pagamento 1": "Pix", " Forma de pagamento 2": "Cartão de credito ", "Forma de pagamento 3" : " Cartão de débito", "Forma de pagamento 4": "Boleto"}
 
     questao_pagamento = int(input('Esta são as formas de pagamento disponiveis : {}, vai escolher querer qual? :'.format(tipos_de_pagamento)))
-
-    #codigo aleatorio do valor pago
-    code = random.random()
 
     if questao_pagamento==1:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 1")
@@ -98,13 +95,18 @@ def gerar_ingresso(filme):
     elif questao_pagamento==4:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 1")
       print("o cliente escolheu  {}".format(pagamento_escolhido))
-    
+
     else:
        print("invalido")
-    
-    print("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor pago : R$ {}".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor))
+
+     #codigo aletorio do valor a ser pago 
+    code = random.random()
+
+    #exibindo a informação coletada na tela
+    print("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor  a ser pago : R$ {}, \n data escolhida para o ver o filme : {} ".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor, dta_completa))
+    #salavndo informação
     with open("informacao.txt", "a") as informacao:
-    		informacao.write("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor pago : R$ {}".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor))
+    		informacao.write("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor  a ser pago : R$ {}, \n data escolhida para o ver o filme : {} ".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor, dta_completa))
     
 
 
