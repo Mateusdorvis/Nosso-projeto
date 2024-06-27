@@ -5,11 +5,15 @@ class Filme:
         self.classificacao = classificacao
     
     def informacao_sobre_filme(self):
-        print(f"Titulo do filme : {self.titulo}, Duração : {self.duracao}, Classificacao : +{self.classificacao}")
+        var1 = self.duracao/60 
+        var2 = "{:.2f}".format(var1)
+        var3 = str(var2).replace(".", "h")
+        print("Titulo do filme : {}, Duração do filme : {} m, Classificacao : +{}".format(self.titulo,var3,self.classificacao))
+
 
     def add_favoritos(self, lista):
         listafav = ["A  lista de filmes favoritos  do cliente:"]
-        questao = int(input(" Deseja o cliente filme para sua lista de favoritos ? 1. Sim 2. Não :"))
+        questao = int(input(" o cliente deseja  este filme para sua lista de favoritos ? 1. Sim 2. Não :"))
         if questao==1:
             listafav.append(lista)
             print(listafav)
@@ -17,6 +21,7 @@ class Filme:
             print("ok")
         else:
             return "digite um número"
+
   #sessao de cinema para + 18
     def verifica_idade_sessao_18(self, idade):
         if idade>=18:
@@ -60,7 +65,6 @@ class Filme:
         else: 
             print("invalido")
     #sessao de cinema livre
-        
         
 
         
