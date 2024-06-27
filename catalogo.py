@@ -1,5 +1,5 @@
 from filmesclass import Filme
-import pagamento 
+import pagamento
 filme = Filme("none", 128, 12)
 
 #funcao
