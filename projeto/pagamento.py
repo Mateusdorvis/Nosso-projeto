@@ -12,6 +12,7 @@ def gerar_ingresso(filme):
        
     else:
         print("invalido")
+        return gerar_ingresso(filme)
     #minutos
     minutos = int(input("Digite os minutos desejados (0 a 59): "))
     if minutos <=59 or minutos >=0:
@@ -22,12 +23,22 @@ def gerar_ingresso(filme):
         return gerar_ingresso(filme)
     else:
        print("invalido")
+       return gerar_ingresso(filme)
 
     horario = "{}h:{}m".format(hora_escolhida, minutos)
 
      #dia
     dia = int(input("Digite o dia ENTRE 1 A 31: "))
     numero_mes = int(input("Digite o numero de mes (EX) 1. JAN ,  2. FEV,  3.MAR,  4.ABR,  5.MAI,  6.JUN,  7. JUL,  8.AGO,  9.SET,  10.OUT ,  11.NOV ,  12.DEZ :"))
+    if numero_mes >=1 and numero_mes<=12:
+       print("ok")
+    elif numero_mes<1 or numero_mes>12:
+       print("invalido")
+       return gerar_ingresso(filme)
+    else: 
+       print("invalido")
+       return gerar_ingresso(filme)
+    
     ano_desejado = int(input("Digite o ano :"))
 
     dta_completa = "{} / {} / {}".format(dia, numero_mes, ano_desejado)
