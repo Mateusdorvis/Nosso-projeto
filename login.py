@@ -24,7 +24,7 @@ def dados_funcionarios(nome: str, senha: int):
         print("Acesso liberado!")
         return True
     else:
-        print("Nome de usuário ou senha incorretos.")
+        print("Nome de usuário ou senha incorretos, tente novamente.")
         return False
     
        
