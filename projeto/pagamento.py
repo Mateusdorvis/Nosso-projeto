@@ -82,19 +82,19 @@ def gerar_ingresso(filme):
 
     if questao_pagamento==1:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 1")
-      print("o cliente escolheu  {}".format(pagamento_escolhido))
+      print("o cliente escolheu como forma de pagamento :  {}".format(pagamento_escolhido))
 
     elif questao_pagamento==2:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 2")
-      print("o cliente escolheu  {}".format(pagamento_escolhido))
+      print("o cliente escolheu  como forma de pagamento : {}".format(pagamento_escolhido))
 
     elif questao_pagamento==4:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 4")
-      print("o cliente escolheu  {}".format(pagamento_escolhido))
+      print("o cliente escolheu  como forma de pagamento : {}".format(pagamento_escolhido))
 
     elif questao_pagamento==4:
       pagamento_escolhido = tipos_de_pagamento.get("Forma de pagamento 1")
-      print("o cliente escolheu  {}".format(pagamento_escolhido))
+      print("o cliente escolheu  como forma de pagamento : {}".format(pagamento_escolhido))
 
     else:
        print("invalido")
