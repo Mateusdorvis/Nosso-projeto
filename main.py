@@ -35,6 +35,7 @@ def main():
             print (f"Este é o catalogo de filmes disponiíveis: {dicionario_filmes}")
           elif escolha == "2":
             catalogo.iniciar
+            
 
 entrada_funcionario()
 mostrar_menu()

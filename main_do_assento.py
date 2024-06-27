@@ -13,7 +13,7 @@ def reserva_assento():
                 return 
             else:
                 print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+                            
             nome = input("Digite o nome do cliente: ")
             fileiraA[0].reserva(nome)
             
@@ -31,7 +31,7 @@ def reserva_assento():
                 return
             else:
                 print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+                            
             nome = input("Digite o nome do cliente: ")
             fileiraA[1].reserva(nome)
             print("Lugar Reservado com sucesso!")
@@ -48,7 +48,7 @@ def reserva_assento():
                 return 
             else:
                 print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+                            
             nome = input("Digite o nome do cliente: ")
             fileiraA[2].reserva(nome)
             print("Lugar Reservado com sucesso!")
@@ -65,7 +65,7 @@ def reserva_assento():
                 return
             else:
                 print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+                
             nome = input("Digite o nome do cliente: ")
             fileiraA[3].reserva(nome)
             print("Lugar Reservado com sucesso!")
@@ -82,7 +82,7 @@ def reserva_assento():
                 return
             else:
                 print('Este lugar está disponível.')
-                #criar uma funcao que faça ele escolher novamente, ou seja voltar ao fluxo do match anterior reserva_assento()            
+                            
             nome = input("Digite o nome do cliente: ")
             fileiraA[4].reserva(nome)
             print("Lugar Reservado com sucesso!")
@@ -143,3 +143,5 @@ def reserva_assento():
                 return reserva_assento()
             else:
                 print("Escolha dos assentos finalizada.")
+
+reserva_assento()
