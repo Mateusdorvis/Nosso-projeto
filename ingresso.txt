@@ -1,0 +1,7 @@
+Tipo de pagamento : Pix ,
+ codigo do pagamento : 0.785654134050598 , 
+ sessao escolhida : VIP , 
+ filme escolhido : Divertida Mente 2, 
+ hora escolhida : 12h:23m,
+ valor  a ser pago : R$ 150, 
+ data escolhida para o ver o filme : 12 / 4 / 2023 
