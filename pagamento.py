@@ -1,5 +1,4 @@
 import random
-import main_do_assento
 def gerar_ingresso(filme):
     
     #hora

@@ -1,5 +1,5 @@
 from filmesclass import Filme
-from main_do_assento import 
+import pagamento 
 filme = Filme("none", 128, 12)
 
 #funcao
