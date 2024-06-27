@@ -1,76 +1,80 @@
 from filmesclass import Filme
-import escolhas
+import pagamento
+filme = Filme("none", 128, 12)
 
-filme = Filme("none", 128, 12) #filme é obj
+#funcao
 def  iniciar():
-		def filmes():
-			dicionario_filmes = {"filme 1": "Divertida Mente 2", "filme 2": "Os Fantasmas se Divertem 2", "filme 3" : "Guerra Civil", "filme 4": "Duna 2", "filme 5": "A Primeira Profecia", "filme 6": "Bad Boys 4", "filme 7" : 'Um Lugar Silencioso - Dia Um'}
-			pergunta2 = int(input(f'Este é o catalogo de filmes disponivel : {dicionario_filmes}, vai escolher querer qual? '))
-			match pergunta2:
-				case 1:
-					filme1 = dicionario_filmes.get("filme 1")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 10)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_10(anos)
-					filme.add_favoritos(filme1)
+	dicionario_filmes = {"filme 1": "Divertida Mente 2", "filme 2": "Os Fantasmas se Divertem : Beetlejuice", "filme 3" : "Guerra Civil", "filme 4": "Duna 2", "filme 5": "A Primeira Profecia", "filme 6": "Bad Boys 4", "filme 7" : 'Um Lugar Silencioso - Dia Um'}
+	pergunta2 = int(input('Este é o catalogo de filmes disponivel : {}, vai escolher querer qual? :'.format(dicionario_filmes)))
+	#se cai na condição 1
+	if pergunta2==1:
+		tirar_valor_chave = dicionario_filmes.get("filme 1")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 128, 10)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_10(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
 
-				case 2:
-					filme1 = dicionario_filmes.get("filme 2")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
-					filme.add_favoritos(filme1)
-
-				case 3:
-					filme1 = dicionario_filmes.get("filme 3")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 18)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_18(anos)
-					filme.add_favoritos(filme1)
-
-				case 4:
-					filme1 = dicionario_filmes.get("filme 4")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
-					filme.add_favoritos()
-
-				case 5:
-					filme1 = dicionario_filmes.get("filme 5")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 12)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_12(anos)
-					filme.add_favoritos()
-
-				case 6:
-					filme1 = dicionario_filmes.get("filme 6")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 14)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_14(anos)
-					filme.add_favoritos(filme1)
-
-				case 7:
-					filme1 = dicionario_filmes.get("filme 7")
-					print(f"você quer assistir {filme1}")
-					filme = Filme(filme1, 128, 16)
-					filme.informacao_sobre_filme()
-					anos = int(input("Tem quantos anos :"))
-					filme.verifica_idade_sessao_16(anos)
-					filme.add_favoritos(filme1)
-				case _:
-					print("invalido")
-
+	#se cair na condiçao 2
+	elif pergunta2==2:
+		tirar_valor_chave = dicionario_filmes.get("filme 2")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 134, "L")
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
+	#condicao 3
+	elif pergunta2==3:
+		tirar_valor_chave = dicionario_filmes.get("filme 3")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 128, 16)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_16(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
+	#condicao 4
+	elif pergunta2==4:
+		tirar_valor_chave = dicionario_filmes.get("filme 4")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 128, 14)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_14(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
+	#condicao 5
+	elif pergunta2==5:
+		tirar_valor_chave = dicionario_filmes.get("filme 5")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 128, 18)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_18(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
+	#condicao 6
+	elif pergunta2==6:
+		tirar_valor_chave = dicionario_filmes.get("filme 6")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 128, 16)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_16(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
+	#condicao 7
+	elif pergunta2==7:
+		tirar_valor_chave = dicionario_filmes.get("filme 7")
+		print("você quer assistir {}".format(tirar_valor_chave))
+		filme = Filme(tirar_valor_chave, 60, 16)
+		filme.informacao_sobre_filme()
+		anos = int(input(" o cliente tem quantos anos :"))
+		filme.verifica_idade_sessao_16(anos)
+		filme.add_favoritos(tirar_valor_chave)
+		pagamento.gerar_ingresso(tirar_valor_chave)
 iniciar()
 
