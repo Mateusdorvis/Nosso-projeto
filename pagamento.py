@@ -1,6 +1,7 @@
 import random
 
 def gerar_ingresso(filme):
+    
     #hora
     hora_escolhida = int(input("Digite o horário desejado (entre 8h a 22h): "))
     if hora_escolhida >=8 and hora_escolhida <=22:
@@ -13,6 +14,7 @@ def gerar_ingresso(filme):
     else:
         print("invalido")
         return gerar_ingresso(filme)
+    
     #minutos
     minutos = int(input("Digite os minutos desejados (0 a 59): "))
     if minutos <=59 or minutos >=0:
@@ -88,6 +90,7 @@ def gerar_ingresso(filme):
     
     else:
        print("invalido")
+
     #forma de como o cliente vai pagar
     tipos_de_pagamento = {"Forma de pagamento 1": "Pix", " Forma de pagamento 2": "Cartão de credito ", "Forma de pagamento 3" : " Cartão de débito", "Forma de pagamento 4": "Boleto"}
 
