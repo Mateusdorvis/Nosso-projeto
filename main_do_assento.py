@@ -144,7 +144,6 @@ def reserva_assento():
             else:
                 print("Escolha dos assentos finalizada.")
 
-reserva_assento()
         
 
 

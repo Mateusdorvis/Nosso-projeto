@@ -1,5 +1,5 @@
 import random
-
+import main_do_assento
 def gerar_ingresso(filme):
     
     #hora
@@ -121,7 +121,7 @@ def gerar_ingresso(filme):
     #exibindo a informação coletada na tela
     print("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor  a ser pago : R$ {}, \n data escolhida para o ver o filme : {} ".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor, dta_completa))
     #salavndo informação
-    with open("informacao.txt", "a") as informacao:
+    with open("ingresso.txt", "a") as informacao:
     		informacao.write("Tipo de pagamento : {} ,\n codigo do pagamento : {} , \n sessao escolhida :{}, \n filme escolhido : {}, \n hora escolhida : {},\n valor  a ser pago : R$ {}, \n data escolhida para o ver o filme : {} ".format(pagamento_escolhido, code,sessao_escolhida, filme, horario, soma_valor, dta_completa))
     
 
