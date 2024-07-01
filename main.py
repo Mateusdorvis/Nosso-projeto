@@ -32,9 +32,12 @@ def main():
           escolha = int(input("Selecione a opção desejada: "))
           
           if escolha == "1":
-            print (f"Este é o catalogo de filmes disponiíveis: {dicionario_filmes}")
+            print (f"Este é o catalogo de filmes disponíveis: {dicionario_filmes}")
           elif escolha == "2":
             catalogo.iniciar
+          
+            
+          
             
 
 entrada_funcionario()
